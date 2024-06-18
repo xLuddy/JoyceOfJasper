@@ -99,17 +99,22 @@ nav {
 
 h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 1px;
     font-weight: bold;
     color: #800020; 
-    max-width: 90%; 
+    max-width: 100%; 
     margin: 0 auto;
     overflow-wrap: break-word;
 }
 
 h1.wedding {
-    font-size: 8rem;
+    font-size: 6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #800020;
+    white-space: nowrap; 
+    overflow-wrap: break-word;
 }
 
 .countdown-container {
@@ -120,7 +125,7 @@ h1.wedding {
 }
 
 .countdown {
-    font-size: 1.5rem; /* Decrease font size for smaller screens */
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
