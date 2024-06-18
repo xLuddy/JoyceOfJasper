@@ -64,15 +64,6 @@ nav {
     color: #008080; 
 }
 
-@media (max-width: 991.98px) {
-    .navbar-nav .nav-item {
-        margin-bottom: 10px; 
-    }
-
-    .navbar-collapse {
-        padding-left: 20px;
-    }
-}
 
 /* Carousel styles */
 .carousel-container {
@@ -106,6 +97,21 @@ nav {
     z-index: 2;
 }
 
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #800020; 
+    max-width: 90%; 
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+
+h1.wedding {
+    font-size: 8rem;
+}
+
 .countdown-container {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
@@ -113,31 +119,11 @@ nav {
     margin-top: 20px;
 }
 
-h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 10rem;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: #800020; 
-}
-
-h1.wedding {
-    font-family: 'Great Vibes', cursive;
-    font-size: 12rem;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: #800020; 
-}
-
 .countdown {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
     font-weight: bold;
 }
 
-.countdown {
-    font-size: 2rem;
-    font-weight: bold;
-}
 
 /* Gallery styles */
 #gallery {
@@ -302,4 +288,53 @@ h1.wedding {
     color: #008080;
 }
 
+/* Responsive adjustments */
 
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; 
+    }
+
+    .navbar-collapse {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem; 
+        margin: 15px;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .navbar-collapse.show {
+        max-height: 1000px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
