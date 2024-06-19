@@ -222,12 +222,11 @@ h1.wedding {
 
 #rsvp {
     padding: 50px 0;
-    text-align: center;
 }
 
 #rsvp h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 4rem; /* Default size for larger screens */
+    font-size: 4rem;
     color: #800020; 
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -235,9 +234,8 @@ h1.wedding {
 }
 
 #rsvp p {
-    font-size: 1.25rem; /* Default size for larger screens */
+    font-size: 1.25rem;
     color: #333;
-    margin-bottom: 40px;
 }
 
 #rsvpForm {
@@ -379,6 +377,6 @@ h1.wedding {
 
 @media (max-width: 768px) {
     #rsvpForm {
-        width: 95%; /* Slightly narrower on small screens */
+        width: 95%;
     }
 }
