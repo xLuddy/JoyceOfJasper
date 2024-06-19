@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("July 07, 2024 00:00:00").getTime();
+var countDownDate = new Date("July 07, 2024 14:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();

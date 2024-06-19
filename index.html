@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body id="top">
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar transparent-navbar navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="#top">Jasper &amp; Joyce</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
                     <a href="#top" class="nav-link active" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#photos" class="nav-link">Photos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#faqs" class="nav-link">FAQs</a>
@@ -37,6 +37,7 @@
         </div>
     </nav>
 
+    <!-- Home -->
     <div class="carousel-container">
         <audio id="background-music" autoplay loop>
             <source src="./images/Beautiful in White - Shane Filan (Piano + Violin).mp3" type="audio/mp3">
@@ -49,7 +50,12 @@
         <div class="carousel-content">
             <h1 class="wedding">Wedding</h1>
             <div class="countdown-container">
-                <p>Countdown to July 6, 2024:</p>
+                <div class="save-the-date">
+                    <p>Please join us as we celebrate our wedding:</p>
+                    <p>SAVE THE DATE</p>
+                    <p>SATURDAY - July 6 - AT 2:00 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/FR36w1QCk1i3F3Hm7" target="_blank">San Roque Parish Church</a></p>
+                </div>
                 <div id="countdown" class="countdown"></div>
             </div>
         </div>
@@ -57,74 +63,28 @@
     
     
 
-    <!-- Gallery -->
-    <section id="gallery" class="mt-5 p-5">
+    <!-- Photos -->
+    <section id="photos">
         <div class="container">
-            <h1 class="text-center mb-4">Gallery</h1>
-            <ul class="nav nav-underline" id="galleryTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="photos-tab" data-bs-toggle="tab" data-bs-target="#photos" type="button" role="tab" aria-controls="photos" aria-selected="true">Photos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="galleryTabsContent">
-                <div class="tab-pane fade show active" id="photos" role="tabpanel" aria-labelledby="photos-tab">
-                    <div class="row mt-4">
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/1.jpg" class="img-fluid" alt="Photo 1">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/2.jpg" class="img-fluid" alt="Photo 2">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/3.jpg" class="img-fluid" alt="Photo 3">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/4.jpg" class="img-fluid" alt="Photo 4">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/5.jpg" class="img-fluid" alt="Photo 5">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/6.jpg" class="img-fluid" alt="Photo 6">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/7.jpg" class="img-fluid" alt="Photo 7">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/8.JPG" class="img-fluid" alt="Photo 8">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/9.PNG" class="img-fluid" alt="Photo 9">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/10.png" class="img-fluid" alt="Photo 10">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/11.png" class="img-fluid" alt="Photo 11">
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <img src="./images/12.png" class="img-fluid" alt="Photo 12">
-                        </div>
-                    </div>
+            <h1 class="text-center mb-4">Photos</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/photo1.JPG" class="img-fluid" alt="Photo 1">
                 </div>
-                <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
-                    <div class="row mt-4">
-                        <div class="col-md-6 mb-3">
-                            <video controls class="w-100">
-                                <source src="./images/3.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <video controls class="w-100">
-                                <source src="./images/4.mov" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <img src="./images/photo2.jpg" class="img-fluid" alt="Photo 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/photo3.jpg" class="img-fluid" alt="Photo 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/photo5.jpg" class="img-fluid" alt="Photo 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/photo4.jpg" class="img-fluid" alt="Photo 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/photo6.jpg" class="img-fluid" alt="Photo 6">
                 </div>
             </div>
         </div>
